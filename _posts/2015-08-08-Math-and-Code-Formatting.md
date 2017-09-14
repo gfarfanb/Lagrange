@@ -2,6 +2,7 @@
 layout: post
 title: "Math and Code Formatting"
 author: "Paul Le"
+authorlink: 
 categories: journal
 tags: [documentation,sample]
 image:

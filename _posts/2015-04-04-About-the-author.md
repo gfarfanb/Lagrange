@@ -2,6 +2,7 @@
 layout: post
 title: "About the Author"
 author: "Paul Le"
+authorlink: 
 categories: journal
 tags: [documentation,sample]
 image:

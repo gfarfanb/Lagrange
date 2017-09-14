@@ -2,6 +2,7 @@
 layout: post
 title: "Khan Academy"
 author: "Paul Le"
+authorlink: 
 categories: journal
 tags: [documentation,sample]
 image:

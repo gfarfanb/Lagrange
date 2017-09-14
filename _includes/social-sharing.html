@@ -1,7 +1,20 @@
-<div class="post-date">Feel free to share!</div>
+<div class="share-container">
+  <div class="post-line">Feel free to share!</div>
   <div class="sharing-icons">
+    <a href="https://getpocket.com/save?url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-get-pocket" aria-hidden="true"></i></a>
+    <a href="https://news.ycombinator.com/submitlink?u={{ site.github.url }}{{ page.url }}&t={{ page.title }}&text={{ page.content | strip_html | markdownify | truncate: site.post-preview-words }}" target="_blank"><i class="fa fa-hacker-news" aria-hidden="true"></i></a>
+    <a href="https://www.reddit.com/submit?url={{ site.github.url }}{{ page.url }}&title={{ page.title }}" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url }}&amp;via={{ site.data.authors.primary.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    <a role="button" href="javascript:collapseShare()"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+    <div id="collapseShare" class="collapse">
+    	<a href="whatsapp://send?text={{ page.title }}%3A%20{{ site.github.url }}{{ page.url }}" data-action="share/whatsapp/share"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    	<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href="mailto:?subject={{ page.title }}&body={{ site.github.url }}{{page.url}}" data-proofer-ignore><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      <a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i></a>
+    </div>
   </div>
 </div>
+<script>
+  var hidden = true; function collapseShare() { var shares = document.getElementById("collapseShare"); if(!hidden) { shares.setAttribute('class', 'collapse'); } else { shares.removeAttribute('class'); } hidden = !hidden; }
+</script>

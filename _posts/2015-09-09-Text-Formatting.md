@@ -2,6 +2,7 @@
 layout: post
 title: "Text Formatting"
 author: "Paul Le"
+authorlink: 
 categories: journal
 tags: [documentation,sample]
 image:
@@ -235,7 +236,7 @@ The abbreviation CSS stands for "Cascading Style Sheets".
 
 ### Cite Tag
 
-"Code is poetry." ---<cite>Automattic</cite>
+"Code is poetry." --- <cite>Automattic</cite>
 
 ### Code Tag
 

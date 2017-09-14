@@ -1,26 +1,36 @@
-title:  Lagrange
-tagline:  a minimalist Jekyll theme
+
+title: Way of the Developer
+tagline: how I become a developer
 
 # Authors documented under _data
 
 # Change to true for Disqus comments
 disqus:
   comments: false
-  disqus_shortname: 'https-lenpaul-github-io-lagrange'
+  disqus_shortname: 'giovannifarfan'
 
-google-ID: 'UA-80213386-1'
+google-tracking-id: 'UA-34247146-2'
+
+# Donations with PayPal
+donate_paypal: 49ZMF7YEPCR34
+# Donations with BitCoins
+donate_blockchain: 1P4w32KT7NwjfGLmnr1eeWs2xJs468PKSk
+
+# Username for Keybase
+keybase-username: gfarfanb
 
 menu:
 - {name: 'About', url: 'about.html'}
-- {name: 'Writing', url: 'writing.html'}
+- {name: 'Trace', url: 'trace.html'}
 - {name: 'Contact', url: 'contact.html'}
 
 social:
-- {icon: 'github', link: 'https://www.github.com/lenpaul'}
-- {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/lenpaul/'}
-- {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
-- {icon: 'rss-square', link: 'https://www.github.com/lenpaul/feed.xml'}
+- {icon: 'github', link: 'https://www.github.com/gfarfanb', head: true}
+- {icon: 'twitter', link: 'https://twitter.com/gfarfanb', head: false}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/gfarfanb/', head: false}
+- {icon: 'facebook', link: 'https://facebook.com/gfarfanb.dev', head: false}
+- {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/5133929/gfarfanb', head: false}
+- {icon: 'envelope', link: 'mailto:gfarfanb@gmail.com', head: true}
+- {icon: 'rss', link: '/feed.xml', head: true}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

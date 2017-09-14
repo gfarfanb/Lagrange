@@ -2,6 +2,7 @@
 layout: post
 title: "Working With Lagrange"
 author: "Paul Le"
+authorlink: 
 categories: journal
 tags: [documentation,sample]
 image:

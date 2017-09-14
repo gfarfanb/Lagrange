@@ -139,6 +139,12 @@ blockquote p {
   font-size:0.8rem;
 }
 
+.post-line {
+  color: #9a9a9a;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size:0.8rem;
+}
+
 @media (max-width: 30rem) {
   .posts h1 {
     font-size: 1.5rem;
@@ -175,7 +181,7 @@ blockquote p {
 .pagination-button {
   color: #999;
   border: 1px solid #e0e0e0;
-  padding: 15px 45px;
+  padding: 10px 50px;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
@@ -244,6 +250,9 @@ blockquote p {
   }
   .menu-content {
     margin-bottom: 5px;
+  }
+  .hide-on-mobiles{
+    display:none !important
   }
 }
 
@@ -425,4 +434,106 @@ pre {
 
 .fa-codepen:hover {
 	color: black;
+}
+
+.fa-get-pocket {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-get-pocket:hover {
+  color: #e64a41;
+}
+
+.fa-hacker-news {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-hacker-news:hover {
+  color: #f39c12;
+}
+
+.fa-reddit {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-reddit:hover {
+  color: #e64a41;
+}
+
+.fa-share-alt {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-share-alt:hover {
+  color: #808080;
+}
+
+.fa-whatsapp {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-whatsapp:hover {
+  color: #00AB6C;
+}
+
+.fa-print {
+  padding: 5px;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+
+.fa-print:hover {
+  color: #808080;
+}
+
+.share-container { 
+  display: inline-block; 
+  text-align: right; 
+  width: 100%
+}
+
+.collapse {
+  display: none;
+}
+
+.improve {
+  float: right;
+  display: block;
+  padding-top: 5px; 
+  color: #9a9a9a;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size:0.8rem;
+}
+
+.improve a {
+  color: #9a9a9a;
+  text-decoration: none;
 }
