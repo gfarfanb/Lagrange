@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Death to Stock"
-author: "Paul Le"
+title: Death to Stock
+author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]

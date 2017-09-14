@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Text Formatting"
-author: "Paul Le"
+title: Text Formatting
+author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]

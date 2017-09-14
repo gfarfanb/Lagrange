@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Khan Academy"
-author: "Paul Le"
+title: Khan Academy
+author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]

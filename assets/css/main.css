@@ -537,3 +537,14 @@ pre {
   color: #9a9a9a;
   text-decoration: none;
 }
+
+.tag {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+.tag-big {
+  color: #9a9a9a;
+  text-decoration: none;
+  font-size:1.2rem;
+}

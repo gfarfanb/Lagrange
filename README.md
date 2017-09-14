@@ -3,13 +3,13 @@
 
 Based on [Lagrange], this is a minimalist Jekyll theme for running a personal blog. This flavour contains all original [Lagrange] features with some additional as:
 
-- [] Donation
-- [] Search
-- [] Hashtags
-- [] Categories
+- [ ] Donation
+- [ ] Search
+- [x] Hashtags
+- [x] Categories
 - [x] More shared options
-- [] Post navigation
-- [] Improve in related posts
+- [ ] Post navigation
+- [ ] Improve in related posts
 
 ## Quick-Start guide
 
@@ -71,6 +71,10 @@ In the `_config.yml` file, you'll be able to change the title of your site along
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
+## OSS/references used in this project
+
+1. [Lagrange]
+1. [Use Tags and Categories in your Jekyll based Github Pages without plugins](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
 
 ## License
 

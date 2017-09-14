@@ -3,14 +3,14 @@ layout: default
 ---
 
 <div class="improve hide-on-mobiles">
-	<a href="{{ page.path }}"><i class="fa fa-pencil"></i> Improve this page</a>
+	<a href="https://github.com/{{ site.data.authors.primary.github }}/{{ site.data.settings.github-repository }}/edit/{{ site.data.settings.github-branch }}/{{ page.path }}"><i class="fa fa-pencil"></i> Improve this page</a>
 </div>
 <h1>
   {{ page.title }}
 </h1>
 
 <span class="post-date">
-  <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html item=page %}
+  <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html item=page %} | {% include tags.html %}
 </span>
 
 {% if page.image.feature %}

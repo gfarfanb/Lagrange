@@ -4,6 +4,10 @@ tagline: how I become a developer
 
 # Authors documented under _data
 
+# GitHub related
+github-repository: way-of-the-developer
+github-branch: gh-pages
+
 # Change to true for Disqus comments
 disqus:
   comments: false
@@ -12,16 +16,16 @@ disqus:
 google-tracking-id: 'UA-34247146-2'
 
 # Donations with PayPal
-donate_paypal: 49ZMF7YEPCR34
+donate-paypal: 49ZMF7YEPCR34
 # Donations with BitCoins
-donate_blockchain: 1P4w32KT7NwjfGLmnr1eeWs2xJs468PKSk
+donate-blockchain: 1P4w32KT7NwjfGLmnr1eeWs2xJs468PKSk
 
 # Username for Keybase
 keybase-username: gfarfanb
 
 menu:
 - {name: 'About', url: 'about.html'}
-- {name: 'Trace', url: 'trace.html'}
+- {name: 'Trace', url: 'blog/trace.html'}
 - {name: 'Contact', url: 'contact.html'}
 
 social:

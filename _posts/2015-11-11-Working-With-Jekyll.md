@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Working With Jekyll"
-author: "Paul Le"
+title: Working With Jekyll
+author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]

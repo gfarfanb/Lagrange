@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Free Code Camp"
-author: "Paul Le"
+title: Free Code Camp
+author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]
