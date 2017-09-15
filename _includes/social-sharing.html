@@ -5,8 +5,8 @@
     <a href="https://news.ycombinator.com/submitlink?u={{ site.github.url }}{{ page.url }}&t={{ page.title }}&text={{ page.content | strip_html | markdownify | truncate: site.post-preview-words }}" target="_blank"><i class="fa fa-hacker-news" aria-hidden="true"></i></a>
     <a href="https://www.reddit.com/submit?url={{ site.github.url }}{{ page.url }}&title={{ page.title }}" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url }}&amp;via={{ site.data.authors.primary.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a role="button" href="javascript:collapseShare()"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-    <div id="collapseShare" class="collapse">
+    <a role="button" href="javascript:toggleHidden('share')"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+    <div class="share hide">
     	<a href="whatsapp://send?text={{ page.title }}%3A%20{{ site.github.url }}{{ page.url }}" data-action="share/whatsapp/share"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
     	<a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
@@ -15,6 +15,3 @@
     </div>
   </div>
 </div>
-<script>
-  var hidden = true; function collapseShare() { var shares = document.getElementById("collapseShare"); if(!hidden) { shares.setAttribute('class', 'collapse'); } else { shares.removeAttribute('class'); } hidden = !hidden; }
-</script>

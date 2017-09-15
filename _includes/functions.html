@@ -1,0 +1,13 @@
+<script>
+  function toggleHidden(item) {
+    var links = document.getElementsByClassName(item);
+    for(var i = 0; i< links.length; i++) {
+      var link = links[i];
+      if(link.className.indexOf('hide') !== -1) {
+        link.className = link.className.replace(new RegExp('(?:^|\\s)'+ 'hide' + '(?:\\s|$)'), ' show');
+      } else {
+        link.className = link.className.replace(new RegExp('(?:^|\\s)'+ 'show' + '(?:\\s|$)'), ' hide');
+      }
+    }
+  }
+</script>

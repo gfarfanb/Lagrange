@@ -234,6 +234,12 @@ blockquote p {
   padding-right: 10px;
 }
 
+.menu-content span {
+  color: #999;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
 .social-icons {
   float: right;
 }
@@ -520,7 +526,7 @@ pre {
   width: 100%
 }
 
-.collapse {
+.hide {
   display: none;
 }
 
@@ -538,6 +544,10 @@ pre {
   text-decoration: none;
 }
 
+.improve a:hover {
+  color: #333;
+}
+
 .tag {
   color: #9a9a9a;
   text-decoration: none;
@@ -547,4 +557,9 @@ pre {
   color: #9a9a9a;
   text-decoration: none;
   font-size:1.2rem;
+}
+
+.donation-button {
+  padding-top: 35px;
+  text-align: center;
 }

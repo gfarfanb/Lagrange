@@ -11,9 +11,9 @@ github-branch: gh-pages
 # Change to true for Disqus comments
 disqus:
   comments: false
-  disqus_shortname: 'giovannifarfan'
+  disqus-shortname: 'way-of-the-developer'
 
-google-tracking-id: 'UA-34247146-2'
+google-tracking-id: 'UA-34247146-3'
 
 # Donations with PayPal
 donate-paypal: 49ZMF7YEPCR34
@@ -25,7 +25,11 @@ keybase-username: gfarfanb
 
 menu:
 - {name: 'About', url: 'about.html'}
-- {name: 'Trace', url: 'blog/trace.html'}
+- {name: 'Blog', leafs: [
+    {name: 'Tags', url: 'blog/tag.html'}, 
+    {name: 'Categories', url: 'blog/category.html'},
+    {name: 'Trace', url: 'blog/trace.html'}
+  ]}
 - {name: 'Contact', url: 'contact.html'}
 
 social:

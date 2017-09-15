@@ -1,7 +1,15 @@
 <div class="menu">
   <nav class="menu-content">
     {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
+      {% if item.leafs %}
+        <a role="button" href="javascript:toggleHidden('{{ item.name | replace: ' ', '_' }}')">{{ item.name }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        {% for leaf in item.leafs %}
+          <a class="{{ item.name | replace: ' ', '_' }} hide" href="{{ site.github.url }}/{{ leaf.url }}">{{ leaf.name }}</a>
+        {% endfor %}
+        <span class="{{ item.name | replace: ' ', '_' }} hide">|&nbsp;</span>
+      {% else %}
+        <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
+      {% endif %}
     {% endfor %}
   </nav>
   <nav class="social-icons">

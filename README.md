@@ -3,12 +3,11 @@
 
 Based on [Lagrange], this is a minimalist Jekyll theme for running a personal blog. This flavour contains all original [Lagrange] features with some additional as:
 
-- [ ] Donation
+- [x] Donation
 - [ ] Search
 - [x] Hashtags
 - [x] Categories
 - [x] More shared options
-- [ ] Post navigation
 - [ ] Improve in related posts
 
 ## Quick-Start guide
