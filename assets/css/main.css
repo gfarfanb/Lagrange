@@ -107,12 +107,13 @@ blockquote p {
 }
 
 .masthead-title a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #505050;
 }
 
 .masthead-subtitle {
+  font-size: 1rem;
   color: #999;
 }
 
@@ -562,4 +563,9 @@ pre {
 .donation-button {
   padding-top: 35px;
   text-align: center;
+}
+
+.not-found {
+  padding-top: 35px;
+  text-align: center; 
 }

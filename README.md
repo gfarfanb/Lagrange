@@ -9,6 +9,8 @@ Based on [Lagrange], this is a minimalist Jekyll theme for running a personal bl
 - [x] Categories
 - [x] More shared options
 - [ ] Improve in related posts
+- [ ] Series
+- [ ] Reset script
 
 ## Quick-Start guide
 
