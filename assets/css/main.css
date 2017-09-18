@@ -569,3 +569,47 @@ pre {
   padding-top: 35px;
   text-align: center; 
 }
+
+.search-hits {
+}
+
+.search-hits p {
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.search-hits a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+.search-hits a:hover {
+  color: #333;
+}
+
+.search-pagination {
+  font-family: "Quattrocento Sans", sans-serif;
+  text-align: center;
+}
+
+.search-pagination span {
+  display: none;
+}
+
+.search-pagination ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.search-pagination a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+.search-pagination a:hover {
+  color: #333;
+}
+
+.algolia__result-highlight {
+  color: #333;
+  font-weight: bold;
+}

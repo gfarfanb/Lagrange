@@ -13,6 +13,7 @@
     {% endfor %}
   </nav>
   <nav class="social-icons">
+    <a href="{{ site.github.url }}/search.html"><i class="fa fa-search" aria-hidden="true"></i></a>
     {% for item in site.data.settings.social %}
       {% if item.head %}
         <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>

@@ -10,10 +10,11 @@ github-branch: gh-pages
 
 # Change to true for Disqus comments
 disqus:
-  comments: false
-  disqus-shortname: 'way-of-the-developer'
+  comments: true
+  disqus-shortname: way-of-the-developer
 
-google-tracking-id: 'UA-34247146-3'
+# Google Analytics
+google-tracking-id: UA-34247146-3
 
 # Donations with PayPal
 donate-paypal: 49ZMF7YEPCR34
@@ -23,12 +24,16 @@ donate-blockchain: 1P4w32KT7NwjfGLmnr1eeWs2xJs468PKSk
 # Username for Keybase
 keybase-username: gfarfanb
 
+# Algolia Search API Key
+algolia-search: c9710bd3f1746de8286711a4f2a092c6
+algolia-hits: 5
+
 menu:
 - {name: 'About', url: 'about.html'}
 - {name: 'Blog', leafs: [
     {name: 'Tags', url: 'blog/tag.html'}, 
     {name: 'Categories', url: 'blog/category.html'},
-    {name: 'Trace', url: 'blog/trace.html'}
+    {name: 'Archive', url: 'blog/archive.html'}
   ]}
 - {name: 'Contact', url: 'contact.html'}
 

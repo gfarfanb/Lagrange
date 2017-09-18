@@ -4,7 +4,7 @@
 Based on [Lagrange], this is a minimalist Jekyll theme for running a personal blog. This flavour contains all original [Lagrange] features with some additional as:
 
 - [x] Donation
-- [ ] Search
+- [x] Search
 - [x] Hashtags
 - [x] Categories
 - [x] More shared options
@@ -28,10 +28,11 @@ For a full local installation, [download your own copy](https://github.com/gfarf
 ```bash
 ruby 2.4.1p111 (2017-03-22 revision 58053) [x64-mingw32]
 ```
-* Install Jekyll and dependencies via command line:
+* Install Bundler via command line (maybe you need to **run as Administrator** mode):
 ```bash
-gem install jekyll jekyll-paginate jekyll-sitemap jekyll-feed wdm
+gem install bundler
 ```
+* Execute `bundle install` to install Jekyll and dependencies.
 * Check Jekyll installation in command line `jekyll --version`, output must be similar to:
 ```
 jekyll 3.5.2
@@ -44,10 +45,11 @@ jekyll 3.5.2
 ```bash
 ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
 ```
-* Install Jekyll and dependencies via command line:
+* Install Bundler via command line:
 ```bash
-gem install jekyll jekyll-paginate jekyll-sitemap jekyll-feed
+gem install bundler
 ```
+* Execute `bundle install` to install Jekyll and dependencies.
 * Check Jekyll installation in command line `jekyll --version`, output must be similar to:
 ```
 jekyll 3.5.2
@@ -76,6 +78,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 1. [Lagrange]
 1. [Use Tags and Categories in your Jekyll based Github Pages without plugins](https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
+1. [Algolia Jekyll Plugin](https://github.com/algolia/algoliasearch-jekyll)
 
 ## License
 

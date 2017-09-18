@@ -1,0 +1,53 @@
+<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+<script>
+  function algoliaSetUp() {
+    var search = instantsearch({
+      appId: "{{ site.algolia.application_id }}",
+      apiKey: "{{ site.data.settings.algolia-search }}",
+      indexName: '{{ site.algolia.index_name }}',
+      urlSync: {}
+    });
+    search.addWidget(
+      instantsearch.widgets.searchBox({
+        container: '#search-input'
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.hits({
+        container: '#hits',
+        hitsPerPage: {{ site.data.settings.algolia-hits }},
+        templates: {
+          item: function(data) {
+            return '<p><a href="' + data.url +'">' + data.content 
+                + '<br><span class="post-line"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;&nbsp;' + data.title +'</span>' 
+                + '</a></p>';
+          },
+          empty: function(data) {
+            return 'We didn\'t find any results for the search <em>"' + data.query + '"</em>.';
+          }
+        },
+        transformData: function(hit) {
+          console.log(hit);
+          for(var prop in hit._highlightResult) {
+            if(hit._highlightResult.hasOwnProperty(prop)
+                && hit._highlightResult[prop].matchedWords !== undefined
+                && hit._highlightResult[prop].matchedWords.length > 0) {
+              hit.content = hit._highlightResult[prop].value;
+            }
+          }
+          if(!hit.content) {
+            hit.content = hit.text;
+          }
+          return hit;
+        }
+      })
+    );
+    search.addWidget(
+      instantsearch.widgets.pagination({
+        container: '#pagination'
+      })
+    );
+    search.start();
+  }
+  var algoliaConfig = setTimeout(function() { try { if(instantsearch) { window.clearInterval(algoliaConfig); algoliaSetUp(); } } catch(err) { console.log(err); } }, 100);
+</script>
