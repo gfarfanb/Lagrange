@@ -10,7 +10,7 @@ github-branch: gh-pages
 
 # Change to true for Disqus comments
 disqus:
-  comments: true
+  comments: false
   disqus-shortname: way-of-the-developer
 
 # Google Analytics

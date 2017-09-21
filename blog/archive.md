@@ -16,8 +16,12 @@ title: Archive
     {% endunless %}
 
     <li itemscope>
-      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-      <p class="post-date"><span><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span></p>
+      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}
+        <span class="post-date">
+          <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - 
+          <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
+        </span>
+      </a>
     </li>
 
   {% endfor %}

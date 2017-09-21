@@ -8,8 +8,8 @@ Based on [Lagrange], this is a minimalist Jekyll theme for running a personal bl
 - [x] Hashtags
 - [x] Categories
 - [x] More shared options
-- [ ] Improve in related posts
-- [ ] Series
+- [x] Improvements in related posts
+- [x] Series
 - [ ] Reset script
 
 ## Quick-Start guide

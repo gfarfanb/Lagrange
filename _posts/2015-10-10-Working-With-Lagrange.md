@@ -5,6 +5,8 @@ author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]
+series: Using Lagrange Theme
+seriesnumber: 3
 image:
   feature: room.jpg
   teaser: room-teaser.jpg

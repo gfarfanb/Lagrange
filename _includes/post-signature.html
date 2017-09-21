@@ -2,18 +2,25 @@ Written on
 {% assign d = include.item.date | date: "%-d"  %}
 {{ include.item.date | date: "%B" }}
 {% case d %}
-  {% when '1' or '21' or '31' %}{{ d }}st
-  {% when '2' or '22' %}{{ d }}nd
-  {% when '3' or '23' %}{{ d }}rd
-  {% else %}{{ d }}th{% endcase %},
+  {% when '1' or '21' or '31' %}
+    {{ d }}st
+  {% when '2' or '22' %}
+    {{ d }}nd
+  {% when '3' or '23' %}
+    {{ d }}rd
+  {% else %}
+    {{ d }}th
+{% endcase %},
 {{ include.item.date | date: "%Y" }}
 by
-{% if include.item.author %}
-  {% if include.item.authorlink %}
-    <a class="post-line" href="{{ include.item.authorlink }}">{{ include.item.author }}</a>
+<span class="post-line">
+  {% if include.item.author %}
+    {% if include.item.authorlink %}
+      <a href="{{ include.item.authorlink }}">{{ include.item.author }}</a>
+    {% else %}
+  	  {{ include.item.author }}
+    {% endif %}
   {% else %}
-  	{{ include.item.author }}
+    <a href="https://github.com/{{ site.data.authors.primary.github }}">{{ site.data.authors.primary.name }}</a>
   {% endif %}
-{% else %}
-  <a class="post-line" href="https://github.com/{{ site.data.authors.primary.github }}">{{ site.data.authors.primary.name }}</a>
-{% endif %}
+</span>

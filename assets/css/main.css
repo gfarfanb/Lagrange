@@ -131,6 +131,10 @@ blockquote p {
   list-style: none;
 }
 
+.posts a {
+  text-decoration: none;
+}
+
 .post-date {
   display: block;
   margin-top:3px;
@@ -531,24 +535,6 @@ pre {
   display: none;
 }
 
-.improve {
-  float: right;
-  display: block;
-  padding-top: 5px; 
-  color: #9a9a9a;
-  font-family: 'Quattrocento Sans', sans-serif;
-  font-size:0.8rem;
-}
-
-.improve a {
-  color: #9a9a9a;
-  text-decoration: none;
-}
-
-.improve a:hover {
-  color: #333;
-}
-
 .tag {
   color: #9a9a9a;
   text-decoration: none;
@@ -568,6 +554,10 @@ pre {
 .not-found {
   padding-top: 35px;
   text-align: center; 
+}
+
+.search-input {
+  width: 100%;
 }
 
 .search-hits {
@@ -612,4 +602,21 @@ pre {
 .algolia__result-highlight {
   color: #333;
   font-weight: bold;
+}
+
+.series {
+  padding-bottom: 2rem;
+}
+
+.series-posts {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.series-posts a {
+  text-decoration: none;
+}
+
+.series-posts span {
+  color: #9a9a9a;
 }

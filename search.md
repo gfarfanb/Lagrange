@@ -5,7 +5,7 @@ title: Search
 
 <header>
   <div>
-    <input id="search-input" placeholder="Search for posts">
+    <input id="search-input" placeholder="Search for posts..." class="search-input">
   </div>
 </header>
 <main>

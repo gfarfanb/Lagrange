@@ -5,6 +5,8 @@ author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]
+series: 
+seriesnumber: 
 image:
   feature: forest.jpg
   teaser: forest-teaser.jpg

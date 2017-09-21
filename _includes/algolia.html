@@ -18,7 +18,7 @@
         hitsPerPage: {{ site.data.settings.algolia-hits }},
         templates: {
           item: function(data) {
-            return '<p><a href="' + data.url +'">' + data.content 
+            return '<p><a href="{{ site.github.url }}' + data.url +'">' + data.content 
                 + '<br><span class="post-line"><i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;&nbsp;' + data.title +'</span>' 
                 + '</a></p>';
           },
@@ -27,7 +27,6 @@
           }
         },
         transformData: function(hit) {
-          console.log(hit);
           for(var prop in hit._highlightResult) {
             if(hit._highlightResult.hasOwnProperty(prop)
                 && hit._highlightResult[prop].matchedWords !== undefined

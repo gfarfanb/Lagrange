@@ -5,6 +5,8 @@ author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]
+series: 
+seriesnumber: 
 image:
   feature: cards.jpg
   teaser: cards-teaser.jpg

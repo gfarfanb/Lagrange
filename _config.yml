@@ -4,6 +4,13 @@
 paginate: 5
 post-preview-words: 350
 
+# Related posts
+minimum-tags-difference: 1
+maximum-related-posts: 3
+# Available values: lt, gt
+related-date-condition: lt
+
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

@@ -5,6 +5,8 @@ author: Paul Le
 authorlink: 
 categories: journal
 tags: [documentation,sample]
+series: Using Lagrange Theme
+seriesnumber: 2
 image:
   feature: computer.jpg
   teaser: computer-teaser.jpg

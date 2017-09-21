@@ -5,6 +5,8 @@ author:
 authorlink: 
 categories: draft
 tags: [post,template]
+series: Draft templates
+seriesnumber: 1
 image:
   feature: mountains.jpg
   teaser: mountains-teaser.jpg

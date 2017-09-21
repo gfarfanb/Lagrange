@@ -1,22 +1,105 @@
 <div class="related">
+
+  {% comment %}
+    Begin of Related posts method 1:
+    Minimum tag match required for consideration as a related post.
+  {% endcomment %}
+
+  {% assign tagged_posts = '' %}
+  {% assign remove_times = page.tags | size | minus: site.minimum-tags-difference %}
+
+  {% comment %}
+    For each tag in current page posts related are searched. The matches are appended to
+    tagged_posts reference (one URL appened per tag match). Repeated URL means several
+    tag matches.
+  {% endcomment %}
+  {% for tag in page.tags %}
+      {% for mypost in site.tags[tag] %}
+        {% assign tagged_posts = tagged_posts | append: mypost.url %}
+      {% endfor %}
+  {% endfor %}
+  
+  {% comment %}
+    The minimum match accepted is defined by length of page.tags minus site.minimum-tags-difference
+    (saved in remove_times). Every URL is removed remove_times times if tagged_posts contains that URL.
+    The result is all of related posts by tags.
+  {% endcomment %}
+  {% for i in (1..remove_times) %}
+    {% for mypost in site.posts %}
+      {% assign tagged_posts = tagged_posts | remove_first: mypost.url %}
+    {% endfor %}
+  {% endfor %}
+
+  {% comment %}
+    End of Related posts method 1.
+  {% endcomment %}
+
+  {% assign posted_count = 0 %}
+  {% assign page_date = page.date | date: '%Y%m%d' | plus: 0 %}
+
   <h3>You may also enjoy:</h3>
-  {% assign listed_posts_urls = page.url | split: ' ' %}
   <ul class="related-posts">
-    {% for tag in page.tags %}
-      {% for mypost in site.tags[tag] limit:3 %}
-        {% if listed_posts_urls contains mypost.url %}
-        {% else %}
-          <li>
-            <a href="{{ site.github.url }}{{ mypost.url }}">
-              {{ mypost.title }}
-            </a>
-            <span class="post-date">
-              <i class="fa fa-calendar" aria-hidden="true"></i> {{ mypost.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html item=mypost %}
-            </span>
-          </li>
-          {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+
+    {% comment %}
+      Related posts method 1.
+    {% endcomment %}
+    {% if tagged_posts %}
+      {% for mypost in site.posts %}
+        {% assign mypost_date = mypost.date | date: '%Y%m%d' | plus: 0 %}
+        
+        {% if tagged_posts contains mypost.url 
+              and page.url != mypost.url
+              and posted_count < site.maximum-related-posts %}
+
+          {% case site.related-date-condition %}
+            {% when 'lt' %}
+              {% if mypost_date <= page_date %}
+                {% include related-item.html mypost=mypost %}
+                {% assign posted_count = posted_count | plus: 1 %}
+              {% endif %}
+            {% when 'gt' %}
+              {% if mypost_date >= page_date %}
+                {% include related-item.html mypost=mypost %}
+                {% assign posted_count = posted_count | plus: 1 %}
+              {% endif %}
+            {% else %}
+          {% endcase %}
+          
         {% endif %}
       {% endfor %}
-    {% endfor %}
+    {% endif %}
+
+    {% comment %}
+      Related posts method 2:
+      Posts searched by tag match and limit site.maximum-related-posts. 
+    {% endcomment %}
+    {% if posted_count < 1 %}
+      {% assign listed_posts_urls = page.url | split: ' ' %}
+      {% for tag in page.tags %}
+        {% for mypost in site.tags[tag] | limit: site.maximum-related-posts %}
+          {% if listed_posts_urls contains mypost.url %}
+          {% else %}
+            {% include related-item.html mypost=mypost %}
+            {% assign posted_count = posted_count | plus: 1 %}
+            {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+
+    {% comment %}
+      Related posts method 3:
+      Last site.maximum-related-posts posts.
+    {% endcomment %}
+    {% if posted_count < 1 %}
+      {% assign maximum_posts = site.maximum-related-posts | plus: 1 %}
+      {% for mypost in site.posts | limit: maximum_posts %}
+        {% if page.url != mypost.url and posted_count <= site.maximum-related-posts %}
+          {% include related-item.html mypost=mypost %}
+          {% assign posted_count = posted_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
   </ul>
 </div>

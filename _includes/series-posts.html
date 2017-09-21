@@ -1,0 +1,20 @@
+<div class="series">
+  <h3>{{ page.series }}</h3>
+  <p>You may take a minute with any posts of the series:</p>
+  <ul class="series-posts">
+  	{% assign series_posts = site.posts | where: "series", page.series | sort: "seriesnumber" %}
+  	{% for mypost in series_posts %}
+  	  <li>
+  	  	{% if mypost.url == page.url %}
+          <span>{{ mypost.seriesnumber }}. {{ mypost.title }}</span>
+  	  	{% else %}
+          <a href="{{ site.github.url }}{{ mypost.url }}">{{ mypost.seriesnumber }}. {{ mypost.title }}</a>
+  	  	{% endif %}
+  	  	<span class="post-date">
+          <i class="fa fa-calendar" aria-hidden="true"></i> {{ mypost.date | date_to_string }} - 
+          <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html item=mypost %}
+        </span>
+      </li>
+  	{% endfor %}
+  </ul>
+</div>
