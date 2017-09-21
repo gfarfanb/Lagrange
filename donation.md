@@ -15,12 +15,12 @@ title: Consider making a donation!
       <input type="hidden" name="currency_code" value="MXN">
       <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
       <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+      <img alt="Paypal donation" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
     </form>
   </div>
   <div class="donation-button">
     <a href="https://blockchain.info/payment_request?address={{ site.data.settings.donate-blockchain }}" target="_blank">
-      <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
+      <img src="https://blockchain.info/Resources/buttons/donate_64.png" alt="Bitcoin donation"/>
     </a>
   </div>
 </div>

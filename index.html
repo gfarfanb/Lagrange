@@ -9,7 +9,7 @@ title: Home
     <a href="{{ site.github.url }}{{ mypost.url }}">{{ mypost.title }}</a>
   </h1>
   {% if mypost.image.teaser %}
-    <a href="{{ site.github.url }}{{ mypost.url }}"><img src="{{ site.github.url }}/assets/img/{{ mypost.image.teaser }}"></a>
+    <a href="{{ site.github.url }}{{ mypost.url }}"><img alt="{{ page.image.credit }}" src="{{ site.github.url }}/assets/img/{{ mypost.image.teaser }}"></a>
   {% endif %}
   <p>
     {{ mypost.content | strip_html | truncate: site.post-preview-words }} <a href="{{ site.github.url }}{{ mypost.url }}">Read more</a>

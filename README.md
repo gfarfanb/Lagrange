@@ -30,7 +30,7 @@ Based on [Lagrange], this is a minimalist Jekyll theme for running a personal bl
   - More sharing options
   - Travis CI integration
     - [Algolia](https://github.com/algolia/algoliasearch-jekyll) indexing
-    - [HTMLProofer](https://github.com/gjtorikian/html-proofer) validation
+    - [HTML-Proofer](https://github.com/gjtorikian/html-proofer) validation
  <!-- 
     - Scripts
     - Reset (cleaning project)
