@@ -5,7 +5,7 @@ title: Consider making a donation!
 
 <div class="container">
   <div class="donation-button">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_donations">
       <input type="hidden" name="business" value="{{ site.data.authors.primary.email }}">
       <input type="hidden" name="lc" value="US">

@@ -4,6 +4,7 @@ gem 'jekyll'
 gem 'jekyll-paginate' 
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
+gem 'html-proofer'
 gem 'wdm', :platforms => [:mingw, :x64_mingw, :mswin]
 
 group :jekyll_plugins do

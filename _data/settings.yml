@@ -37,6 +37,7 @@ menu:
   ]}
 - {name: 'Contact', url: 'contact.html'}
 
+# http://fontawesome.io/icons/ - Brand Icons
 social:
 - {icon: 'github', link: 'https://www.github.com/gfarfanb', head: true}
 - {icon: 'twitter', link: 'https://twitter.com/gfarfanb', head: false}
