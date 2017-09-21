@@ -3,33 +3,37 @@ layout: default
 title: Home
 ---
 
-{% for post in paginator.posts %}
+{% for mypost in paginator.posts %}
 <div class="posts">
   <h1>
-    <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ site.github.url }}{{ mypost.url }}">{{ mypost.title }}</a>
   </h1>
-  {% if post.image.teaser %}
-    <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image.teaser }}"></a>
+  {% if mypost.image.teaser %}
+    <a href="{{ site.github.url }}{{ mypost.url }}">
+      <img src="{{ site.github.url }}/assets/img/{{ mypost.image.teaser }}" alt="{{ mypost.image.credit }}">
+    </a>
   {% endif %}
   <p>
-    {{ post.content | strip_html | truncate: site.post-preview-words }} <a href="{{ site.github.url }}{{ post.url }}">Read more</a>
-    <span class="post-date" style="margin-top:3px"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span>
+    {{ mypost.content | strip_html | truncate: site.post-preview-words }} <a href="{{ site.github.url }}{{ mypost.url }}">Read more</a>
+    <span class="post-date">
+      <i class="fa fa-calendar" aria-hidden="true"></i> {{ mypost.date | date_to_string }} - 
+      <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html item=mypost %}
+    </span>
   </p>
 </div>
 {% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.previous_page_path }}">Newer</a>
+  {% else %}
+    <span class="pagination-button">Newer</span>
+  {% endif %}
+  
   {% if paginator.next_page %}
     <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Older</a>
   {% else %}
     <span class="pagination-button">Older</span>
   {% endif %}
-
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Newer</a>
-    {% else %}
-      <span class="pagination-button">Newer</span>
-  {% endif %}
-
 </div>
