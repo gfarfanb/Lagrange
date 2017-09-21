@@ -9,7 +9,8 @@ branches:
 
 script: 
   - bundle exec jekyll algolia push
-  - jekyll build && htmlproofer ./_site --disable-external --empty-alt-ignore
+  - bundle exec jekyll build 
+  - bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
 
 rvm:
  - 2.2.2
