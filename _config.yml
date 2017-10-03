@@ -43,3 +43,4 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - _scripts

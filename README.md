@@ -31,13 +31,10 @@ Based on [Lagrange], this is a minimalist Jekyll theme for running a personal bl
   - Travis CI integration
     - [Algolia](https://github.com/algolia/algoliasearch-jekyll) indexing
     - [HTML-Proofer](https://github.com/gjtorikian/html-proofer) validation
- <!-- 
-    - Scripts
-    - Reset (cleaning project)
+  - Scripts
     - Add post
     - Add draft
     - Publish draft
-  -->
 
 ## Quick-Start guide
 
@@ -224,7 +221,22 @@ Before to put your site into production, maybe you should complete the next list
 - [ ] Edit `README.md` (at least for license signature).
 - [ ] Change all what you need.
 
-<!-- ## Scripts -->
+## Scripts
+
+You can generate a new draft file by running:
+```bash
+_scripts/newdraft.rb "Title of your post"
+```
+
+After past all post reviews, you can promote your draft to post by running:
+```bash
+_scripts/publishdraft.rb _draft/Title-of-your-post.md
+```
+
+If you are going to write a coffee post, you can generate a new post by running:
+```bash
+_scripts/newpost.rb "Title of your post"
+```
 
 ## License
 
