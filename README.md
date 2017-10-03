@@ -221,6 +221,35 @@ Before to put your site into production, maybe you should complete the next list
 - [ ] Edit `README.md` (at least for license signature).
 - [ ] Change all what you need.
 
+## Travis CI Integration
+
+The file names `.travis.yml` contains a little [Travis Ci](https://travis-ci.org) pipeline. This pipeline executes:
+a) site indexation, b) site building and c) HTML validation.
+
+```yml
+language: ruby
+cache: bundler
+branches:
+  only:
+    - gh-pages
+script: 
+  - bundle exec jekyll algolia push
+  - bundle exec jekyll build 
+  - bundle exec htmlproofer ./_site --disable-external --empty-alt-ignore
+rvm:
+ - 2.2.2
+```
+
+> `.travis.yml` uses a `Gemfile` to install build dependencies. Don't worry it's already defined to this project.
+
+If you need Travis CI, create/open your dashboard, configure a new repository, switch on `Build pushes` in settings and add an [environment variable](http://docs.travis-ci.com/user/environment-variables/) also in settings. 
+
+```properties
+ALGOLIA_API_KEY=<Algolia-Admin-API-Key>
+```
+
+All push to your branch (e.g. `gh-pages`) Travis will catch them and then trigger pipeline for you.
+
 ## Scripts
 
 You can generate a new draft file by running:

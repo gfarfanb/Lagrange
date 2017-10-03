@@ -395,7 +395,7 @@ pre {
 	color: #3d5b99;
 }
 
-.fa-google-plus {
+.fa-google-plus-official {
   padding: 5px;
 	-o-transition:.5s;
   	-ms-transition:.5s;
@@ -404,7 +404,7 @@ pre {
   	transition: .5s;
 }
 
-.fa-google-plus:hover {
+.fa-google-plus-official:hover {
 	color: #e64a41;
 }
 
