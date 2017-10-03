@@ -38,6 +38,7 @@ menu:
 - {name: 'Contact', url: 'contact.html'}
 
 # http://fontawesome.io/icons/ - Brand Icons
+# head: true for include in menu options otherwise false
 social:
 - {icon: 'github', link: 'https://www.github.com/gfarfanb', head: true}
 - {icon: 'twitter', link: 'https://twitter.com/gfarfanb', head: false}
@@ -45,6 +46,3 @@ social:
 - {icon: 'facebook', link: 'https://facebook.com/gfarfanb.dev', head: false}
 - {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/5133929/gfarfanb', head: false}
 - {icon: 'envelope', link: 'mailto:gfarfanb@gmail.com', head: true}
-- {icon: 'rss', link: '/feed.xml', head: true}
-
-# Available social icons are powered by Font Awesome, so you can use any icon that they offer

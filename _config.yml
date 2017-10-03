@@ -15,7 +15,11 @@ related-date-condition: lt
 markdown: kramdown
 highlighter: rouge
 permalink: none
-plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, algoliasearch-jekyll]
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - algoliasearch-jekyll
 
 # Customise feed settings (uncommenting following two fields to customise feed title and description)
 #title:	"Way of the Developer-Custom"
@@ -35,4 +39,7 @@ algolia:
     - search.md
     - blog
 
-exclude: [vendor]
+exclude: 
+  - vendor
+  - Gemfile
+  - Gemfile.lock

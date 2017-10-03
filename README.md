@@ -107,7 +107,34 @@ In the `_config.yml` file, you'll be able to change the title of your site along
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-## User accounts customization
+## User customization
+
+### Authors and social links
+
+Your contact information edit in the `_data/authors.yml` (name, email, Twitter and GitHub usernames, or whatever you need to include). Current listed fields are used in several parts during Jekyll building. If you don't have any, no problem, respective links will be broken :sweat_smile:.
+
+```yml
+primary:
+  name: <author-name>
+  email: <author-email>
+  twitter: <author-twitter-username>
+  github: <author-github-username>
+```
+
+In the `_data/settings.yml` are listed the social links that you want to share. The list is used both in menu and footer, you can hide any link in menu part using `head: false` field. Available social icons are powered by [Font Awesome](http://fontawesome.io/icons/), so you can use any icon that they offer.
+```yml
+social:
+- {icon: 'github', link: 'https://www.github.com/<author-username>', head: true}
+- {icon: 'twitter', link: 'https://twitter.com/<author-username>', head: false}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/<author-username>/', head: false}
+- {icon: 'facebook', link: 'https://facebook.com/<author-facebook-page>', head: false}
+- {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/<author-identifier>/<author-username>', head: false}
+- {icon: 'envelope', link: 'mailto:<author-email>', head: true}
+```
+
+### Settings about user accounts
+
+In order to add the next information you are going to need a few suscriptions:
 
 <table>
   <tr>
@@ -184,6 +211,18 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
   	</td>
   </tr>
 </table>
+
+### Checklist
+
+Before to put your site into production, maybe you should complete the next list:
+
+- [ ] Remove post from `_posts`
+- [ ] Edit the `_config.yml` for: Algolia indexing, pagination and related posts settings.
+- [ ] Edit the `_data/settings.yml` for: Title/tagline, source code repository, accounts related and social links.
+- [ ] Describe in `about.md` the purpose of your site.
+- [ ] Describe in `contact.md` how people can reach you.
+- [ ] Edit `README.md` (at least for license signature).
+- [ ] Change all what you need.
 
 <!-- ## Scripts -->
 
