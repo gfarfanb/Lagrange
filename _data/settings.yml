@@ -8,6 +8,9 @@ tagline: how I become a developer
 github-repository: way-of-the-developer
 github-branch: gh-pages
 
+# Assets root
+assets: https://raw.githubusercontent.com/wiki/gfarfanb/way-of-the-developer
+
 # Change to true for Disqus comments
 disqus:
   comments: false
@@ -20,9 +23,6 @@ google-tracking-id: UA-34247146-3
 donate-paypal: 49ZMF7YEPCR34
 # Donations with BitCoins
 donate-blockchain: 1P4w32KT7NwjfGLmnr1eeWs2xJs468PKSk
-
-# Username for Keybase
-keybase-username: gfarfanb
 
 # Algolia Search API Key
 algolia-search: c9710bd3f1746de8286711a4f2a092c6
@@ -40,10 +40,10 @@ menu:
 # http://fontawesome.io/icons/ - Brand Icons
 # head: true for include in menu options otherwise false
 social:
-- {icon: 'github', link: 'https://www.github.com/gfarfanb', head: true}
-- {icon: 'twitter', link: 'https://twitter.com/gfarfanb', head: false}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/gfarfanb/', head: false}
-- {icon: 'facebook', link: 'https://facebook.com/gfarfanb.dev', head: false}
-#- {icon: 'google-plus-official', link: 'https://plus.google.com/communities/', head: false}
-- {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/5133929/gfarfanb', head: false}
-- {icon: 'envelope', link: 'mailto:giovanni.fb@hotmail.com', head: true}
+- {icon: 'github', link: 'https://github.com/', head: true}
+- {icon: 'twitter', link: 'https://twitter.com/', head: false}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/', head: false}
+- {icon: 'facebook', link: 'https://facebook.com/', head: false}
+- {icon: 'google-plus', link: 'https://plus.google.com/communities/', head: false}
+- {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/', head: false}
+- {icon: 'envelope', link: 'mailto:', head: true}

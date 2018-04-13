@@ -3,7 +3,8 @@
 
 [![Build Status](https://travis-ci.org/gfarfanb/way-of-the-developer.svg?branch=gh-pages)](https://travis-ci.org/gfarfanb/way-of-the-developer)
 
-Based on [Lagrange], this is a minimalist Jekyll theme for running a personal blog. This flavour contains all original [Lagrange] features with some additional as:
+Based on [Lagrange], this is a minimalist Jekyll theme for running a personal blog. 
+This flavour contains all original [Lagrange] features with some additional as:
 
 - Fork of [Lagrange]
   - Modern and minimal design
@@ -38,17 +39,30 @@ Based on [Lagrange], this is a minimalist Jekyll theme for running a personal bl
 
 ## Quick-Start guide
 
-To start using Jekyll right away, [fork the Way of the Developer repository on GitHub](https://github.com/gfarfanb/way-of-the-developer/fork). From there, you can rename the repository to `USERNAME.github.io`, where `USERNAME` is your GitHub username, and edit the `_config.yml` file to your liking. Ensure that you have a branch named `gh-pages`. Your website should be ready immediately at `http://USERNAME.github.io`.
+To start using Jekyll right away, 
+[fork the Way of the Developer repository on GitHub](https://github.com/gfarfanb/way-of-the-developer/fork). 
+From there, you can rename the repository to `USERNAME.github.io`, where `USERNAME` is your GitHub username, 
+and edit the `_config.yml` file to your liking. Ensure that you have a branch named `gh-pages`. 
+Your website should be ready immediately at `http://USERNAME.github.io`.
 
-Head over to the `_posts` directory to view all the posts that are currently on the website, and to see examples of what post files generally look like. You can simply just duplicate the template post and start adding your own content.
+Head over to the `_posts` directory to view all the posts that are currently on the website, 
+and to see examples of what post files generally look like. You can simply just duplicate the 
+template post and start adding your own content.
 
 ### How to install it
 
-For a full local installation, [download your own copy](https://github.com/gfarfanb/way-of-the-developer/archive/gh-pages.zip) and unzip it into it's own directory. From there, open up your favorite command line tool, and enter `jekyll serve`. Your site should be up and running locally at [http://localhost:4000](http://localhost:4000). If you do not have installed `jekyll` command follow the next instructions:
+For a full local installation,
+ [download your own copy](https://github.com/gfarfanb/way-of-the-developer/archive/gh-pages.zip) 
+ and unzip it into it's own directory. From there, open up your favorite command line tool, 
+ and enter `jekyll serve`. Your site should be up and running locally at 
+ [http://localhost:4000](http://localhost:4000). If you do not have installed `jekyll` command 
+ follow the next instructions:
 
 #### Windows approach
 
-* Check Ruby installation in command line `ruby --version`. If you do not have Ruby then download and install it using [RubyInstaller](https://rubyinstaller.org/) (in this case *rubyinstaller-2.4.1-2-x64.exe* was selected).  In case that you already have Ruby, the output must be similar to:
+* Check Ruby installation in command line `ruby --version`. If you do not have Ruby then download 
+and install it using [RubyInstaller](https://rubyinstaller.org/) (in this case *rubyinstaller-2.4.1-2-x64.exe* 
+was selected).  In case that you already have Ruby, the output must be similar to:
 ```bash
 ruby 2.4.1p111 (2017-03-22 revision 58053) [x64-mingw32]
 ```
@@ -68,7 +82,10 @@ jekyll 3.5.2
 
 #### Ubuntu approach
 
-* Check Ruby installation in command line `ruby --version`. If you do not have Ruby you can follow [this guide for installing Ruby on Ubuntu](https://gorails.com/setup/ubuntu/14.04) (remember choice the best setup based on Ubuntu version using `lsb_release -a`). In case that you already have Ruby, the output must be similar to:
+* Check Ruby installation in command line `ruby --version`. If you do not have Ruby you can follow 
+[this guide for installing Ruby on Ubuntu](https://gorails.com/setup/ubuntu/14.04) 
+(remember choice the best setup based on Ubuntu version using `lsb_release -a`). 
+In case that you already have Ruby, the output must be similar to:
 ```bash
 ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
 ```
@@ -88,45 +105,78 @@ jekyll 3.5.2
 
 ### Posts
 
-You will find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+You will find this post in your `_posts` directory. Go ahead and edit it and re-build the site to 
+see your changes. You can rebuild the site in many different ways, but the most common way is to 
+run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. If you already have a website built with Jekyll, simply copy over your posts.
+To add new posts, simply add a file in the `_posts` directory that follows the convention 
+`YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source 
+for this post to get an idea about how it works. If you already have a website built with Jekyll, 
+simply copy over your posts.
 
 ### Configuration
 
-To change site settings, edit the `_config.yml` file found in the root of your repository. Anything under 'Site Settings' can be tweaked to your liking.
+To change site settings, edit the `_config.yml` file found in the root of your repository. 
+Anything under 'Site Settings' can be tweaked to your liking.
 
-If you are hosting your site on GitHub Pages, then committing a change to the `_config.yml` file will force a rebuild of your site with Jekyll. Any changes made should be viewable soon after. If you are hosting your site locally, then you must run `jekyll serve` again for the changes to take place.
+If you are hosting your site on GitHub Pages, then committing a change to the `_config.yml` 
+file will force a rebuild of your site with Jekyll. Any changes made should be viewable soon after. 
+If you are hosting your site locally, then you must run `jekyll serve` again for the changes to take place.
 
-In the `_config.yml` file, you'll be able to change the title of your site along with any tagline you want, which shows up in the site header, as well as the description of your site for SEO purposes. You can also change the social media information, and add your own social media icons.
+In the `_config.yml` file, you'll be able to change the title of your site along with any tagline you want,
+which shows up in the site header, as well as the description of your site for SEO purposes. 
+You can also change the social media information, and add your own social media icons.
+
+### Posting images
+
+It is a really bad practice to include images inside the main code of the project. So, in orther to avoid
+that practice just read this useful article 
+[Posting Images on Github's Wiki](https://publicobject.com/2014/12/31/posting-images-on-githubs-wiki/).
+You can find the base path for your images in `_data/settings.yml` with name `assets`. So basically 
+you need to add an image like `{{ site.data.settings.assets }}/any_image_you_already_push_to_wiki.png`.
 
 ### Everything Else
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. 
+File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]. If you have questions, 
+you can ask them on [Jekyll Talk][jekyll-talk].
 
 ## User customization
 
 ### Authors and social links
 
-Your contact information edit in the `_data/authors.yml` (name, email, Twitter and GitHub usernames, or whatever you need to include). Current listed fields are used in several parts during Jekyll building. If you don't have any, no problem, respective links will be broken :sweat_smile:.
+Your contact information edit in the `_data/authors.yml` (name, email, Twitter and GitHub usernames, 
+or whatever you need to include). Current listed fields are used in several parts during Jekyll building. 
+If you don't have any, no problem, respective links will be broken :sweat_smile:.
 
 ```yml
 primary:
   name: <author-name>
   email: <author-email>
-  twitter: <author-twitter-username>
+  envelope: <author-email>
+  keybase: <author-keybase-username>
   github: <author-github-username>
+  twitter: <author-twitter-username>
+#  linkedin: <author-linkedin-username>
+#  facebook: <author-facebook-username>
+#  google-plus: <author-google-plus-community-username>
+#  stack-overflow: <author-stackoverflow-username>
 ```
 
-In the `_data/settings.yml` are listed the social links that you want to share. The list is used both in menu and footer, you can hide any link in menu part using `head: false` field. Available social icons are powered by [Font Awesome](http://fontawesome.io/icons/), so you can use any icon that they offer.
+In the `_data/settings.yml` are listed the social links that you want to share. The list is 
+matched with accounts' `primary` author using `icon` field, and if you do not have any social,
+just comment `primary` author account. On the other hand, the list is used both in menu and footer, 
+you can hide any link in menu part using `head: false` field. Available social icons are powered 
+by [Font Awesome](http://fontawesome.io/icons/), so you can use any icon that they offer.
 ```yml
 social:
-- {icon: 'github', link: 'https://www.github.com/<author-username>', head: true}
-- {icon: 'twitter', link: 'https://twitter.com/<author-username>', head: false}
-- {icon: 'linkedin', link: 'http://www.linkedin.com/in/<author-username>/', head: false}
-- {icon: 'facebook', link: 'https://facebook.com/<author-facebook-page>', head: false}
-- {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/<author-identifier>/<author-username>', head: false}
-- {icon: 'envelope', link: 'mailto:<author-email>', head: true}
+- {icon: 'github', link: 'https://github.com/', head: true}
+- {icon: 'twitter', link: 'https://twitter.com/', head: false}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/in/', head: false}
+- {icon: 'facebook', link: 'https://facebook.com/', head: false}
+- {icon: 'google-plus', link: 'https://plus.google.com/communities/', head: false}
+- {icon: 'stack-overflow', link: 'https://stackoverflow.com/users/', head: false}
+- {icon: 'envelope', link: 'mailto:', head: true}
 ```
 
 ### Settings about user accounts
@@ -223,7 +273,8 @@ Before to put your site into production, maybe you should complete the next list
 
 ## Travis CI Integration
 
-The file names `.travis.yml` contains a little [Travis Ci](https://travis-ci.org) pipeline. This pipeline executes:
+The file names `.travis.yml` contains a little [Travis Ci](https://travis-ci.org) pipeline.
+ This pipeline executes:
 a) site indexation, b) site building and c) HTML validation.
 
 ```yml
@@ -240,9 +291,12 @@ rvm:
  - 2.2.2
 ```
 
-> `.travis.yml` uses a `Gemfile` to install build dependencies. Don't worry it's already defined to this project.
+> `.travis.yml` uses a `Gemfile` to install build dependencies. Don't worry it's already defined 
+to this project.
 
-If you need Travis CI, create/open your dashboard, configure a new repository, switch on `Build pushes` in settings and add an [environment variable](http://docs.travis-ci.com/user/environment-variables/) also in settings. 
+If you need Travis CI, create/open your dashboard, configure a new repository, switch on `Build pushes` 
+in settings and add an [environment variable](http://docs.travis-ci.com/user/environment-variables/) 
+also in settings. 
 
 ```properties
 ALGOLIA_API_KEY=<Algolia-Admin-API-Key>
@@ -269,7 +323,8 @@ _scripts/newpost.rb "Title of your post"
 
 ## License
 
-Copyright © 2017, [Giovanni Farfán B](https://github.com/gfarfanb). Released under the [MIT License](https://opensource.org/licenses/MIT).
+Copyright © 2018, [Giovanni Farfán B](https://github.com/gfarfanb). Released under the 
+[MIT License](https://opensource.org/licenses/MIT).
 
 [Lagrange]: https://github.com/LeNPaul/Lagrange
 [Tags]: https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/

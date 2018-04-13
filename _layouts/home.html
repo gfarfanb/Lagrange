@@ -10,7 +10,7 @@ title: Home
   </h1>
   {% if mypost.image.teaser %}
     <a href="{{ site.github.url }}{{ mypost.url }}">
-      <img src="{{ site.github.url }}/assets/img/{{ mypost.image.teaser }}" alt="{{ mypost.image.credit }}">
+      <img src="{{ site.data.settings.assets }}/img/{{ mypost.image.teaser }}" alt="{{ mypost.image.credit }}">
     </a>
   {% endif %}
   <p>
