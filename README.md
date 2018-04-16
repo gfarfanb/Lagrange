@@ -39,7 +39,7 @@ This flavour contains all original [Lagrange] features with some additional as:
 
 ## Quick-Start guide
 
-To start using Jekyll right away, 
+To start using this repository right away, 
 [fork the Way of the Developer repository on GitHub](https://github.com/gfarfanb/way-of-the-developer/fork). 
 From there, you can rename the repository to `USERNAME.github.io`, where `USERNAME` is your GitHub username, 
 and edit the `_config.yml` file to your liking. Ensure that you have a branch named `gh-pages`. 
@@ -105,7 +105,7 @@ jekyll 3.5.2
 
 ### Posts
 
-You will find this post in your `_posts` directory. Go ahead and edit it and re-build the site to 
+You will find the blog posts in your `_posts` directory. Go ahead, edit and re-build the site to 
 see your changes. You can rebuild the site in many different ways, but the most common way is to 
 run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -148,7 +148,7 @@ you can ask them on [Jekyll Talk][jekyll-talk].
 
 ### Authors and social links
 
-Your contact information edit in the `_data/authors.yml` (name, email, Twitter and GitHub usernames, 
+Your contact information edit in the `_data/authors.yml` (name, email, Twitter and GitHub, 
 or whatever you need to include). Current listed fields are used in several parts during Jekyll building. 
 If you don't have any, no problem, respective links will be broken :sweat_smile:.
 
@@ -307,7 +307,7 @@ You can generate a new draft file by running:
 _scripts/newdraft.rb "Title of your post"
 ```
 
-After past all post reviews, you can promote your draft to post by running:
+After pass all post reviews, you can promote your draft to post by running:
 ```bash
 _scripts/publishdraft.rb _draft/Title-of-your-post.md
 ```
