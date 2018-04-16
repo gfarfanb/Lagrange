@@ -9,7 +9,7 @@ github-repository: way-of-the-developer
 github-branch: gh-pages
 
 # Assets root
-assets: https://raw.githubusercontent.com/wiki/gfarfanb/way-of-the-developer
+assets-img: https://raw.githubusercontent.com/wiki/gfarfanb/way-of-the-developer/img
 
 # Change to true for Disqus comments
 disqus:

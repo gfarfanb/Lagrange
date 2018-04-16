@@ -10,7 +10,7 @@ title: Home
   </h1>
   {% if mypost.image.teaser %}
     <a href="{{ site.github.url }}{{ mypost.url }}">
-      <img src="{{ site.data.settings.assets }}/img/{{ mypost.image.teaser }}" alt="{{ mypost.image.credit }}">
+      <img src="{{ site.data.settings.assets-img }}/{{ mypost.image.teaser }}" alt="{{ mypost.image.credit }}">
     </a>
   {% endif %}
   <p>
@@ -32,7 +32,7 @@ title: Home
   {% endif %}
   
   {% if paginator.next_page %}
-    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Older</a>
+    <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">Older</a>
   {% else %}
     <span class="pagination-button">Older</span>
   {% endif %}

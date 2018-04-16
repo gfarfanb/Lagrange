@@ -132,8 +132,11 @@ You can also change the social media information, and add your own social media 
 It is a really bad practice to include images inside the main code of the project. So, in orther to avoid
 that practice just read this useful article 
 [Posting Images on Github's Wiki](https://publicobject.com/2014/12/31/posting-images-on-githubs-wiki/).
-You can find the base path for your images in `_data/settings.yml` with name `assets`. So basically 
-you need to add an image like `{{ site.data.settings.assets }}/any_image_you_already_push_to_wiki.png`.
+Basically you need to put your images under Wiki's project repository, after that the images will be 
+accesible using this root `https://raw.githubusercontent.com/wiki/<github-username>/<github-repository>`.
+The file `_data/settings.yml` contains a property `assets-img` with the root path and whatever part
+you want to show an image, just put the resource like 
+`{{ site.data.settings.assets-img }}/any_image_you_already_push_to_wiki.png`.
 
 ### Everything Else
 
@@ -196,7 +199,8 @@ In order to add the next information you are going to need a few suscriptions:
   	<td>_data/settings.yml</td>
   	<td>
   		github-repository: <em>&lt;github-repository-name&gt;</em><br>
-  		github-branch: <em>&lt;github-repository-branch&gt;</em>
+  		github-branch: <em>&lt;github-repository-branch&gt;</em><br>
+  		assets-img: <em>https://raw.githubusercontent.com/wiki/&lt;github-username&gt;/&lt;github-repository-name&gt;</em>
   	</td>
   </tr>
   <tr>
@@ -231,14 +235,6 @@ In order to add the next information you are going to need a few suscriptions:
   	<td>_data/settings.yml</td>
   	<td>
   		algolia-search: <em>&lt;algolia-search-api-key&gt;</em>
-  	</td>
-  </tr>
-  <tr>
-    <td><a href="https://keybase.io">Keybase</a></td>
-  	<td>Verification</td>
-  	<td>_data/settings.yml</td>
-  	<td>
-  		keybase-username: <em>&lt;keybase-username&gt;</em>
   	</td>
   </tr>
   <tr>
