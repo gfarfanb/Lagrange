@@ -53,8 +53,8 @@ template post and start adding your own content.
 
 For a full local installation,
  [download your own copy](https://github.com/gfarfanb/way-of-the-developer/archive/gh-pages.zip) 
- and unzip it into it's own directory. From there, open up your favorite command line tool, 
- and enter `jekyll serve`. Your site should be up and running locally at 
+ and unzip it into its own directory. From there, open up your favorite command line tool, 
+ and enter `jekyll serve`. Your site should be up and run locally at 
  [http://localhost:4000](http://localhost:4000). If you do not have installed `jekyll` command 
  follow the next instructions:
 
