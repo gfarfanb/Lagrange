@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Home
 ---
 
 {% for mypost in paginator.posts %}
@@ -26,7 +25,7 @@ title: Home
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.previous_page_path }}">Newer</a>
+    <a class="pagination-button pagination-active previous" href="{{ site.github.url }}{{ paginator.previous_page_path }}">Newer</a>
   {% else %}
     <span class="pagination-button">Newer</span>
   {% endif %}

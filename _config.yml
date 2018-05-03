@@ -1,22 +1,29 @@
 
-# Site Settings
-
-paginate: 5
+# Site settings
 post-preview-words: 350
 
-# Related posts
+# Related posts settings
 minimum-tags-difference: 1
 maximum-related-posts: 3
 # Available values: lt, gt
 related-date-condition: lt
 
+# Pagination settings
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: none
 plugins: 
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-feed
   - algoliasearch-jekyll
