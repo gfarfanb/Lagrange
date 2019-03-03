@@ -1,3 +1,5 @@
+:warning: This project is no longer actively maintained. You can check the updates of the theme into
+[my personal page repositoty](https://github.com/gfarfanb/gfarfanb.github.io).
 
 # Way of the Developer theme - A flavour of Lagrange
 
